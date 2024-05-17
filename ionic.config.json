@@ -1,0 +1,7 @@
+{
+  "name": "app-alarma-de-robo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
