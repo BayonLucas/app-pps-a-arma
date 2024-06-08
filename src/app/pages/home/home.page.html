@@ -1,0 +1,20 @@
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-toolbar class="ion-text-center toolbar-color">
+      <ion-title *ngIf="!activado" class="title-container">Presione para activar</ion-title>    
+      <ion-title *ngIf="activado" class="title-container">Presione para desactivar</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="container">
+    <img *ngIf="!activado" src="../../../assets/botones/encendido.jpeg" alt="boton-activar" (click)="onoff()">
+    <img *ngIf="activado" src="../../../assets/botones/apagado.jpg" alt="boton-activar" (click)="onoff()">
+  </div>
+  
+  <div class="bottom-button">
+    <ion-button shape="round" fill="outline" expand="full" size="large" class="logout"  title="Cerrar sesión" (click)="cerrarSesion()">
+      Cerrar Sesión
+    </ion-button>
+  </div>
+
+</ion-content>
